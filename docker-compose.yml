@@ -6,7 +6,7 @@ services:
     environment:
       DB_DSN: "sqlite:./data/stockmate.db"
     volumes:
-      - stockmate_data:/app/data
+      - ./data:/app/data
     ports:
       - "8080:8080"
 
